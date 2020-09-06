@@ -1219,7 +1219,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '보탐봇버전 : Server Ver. 21 (2020. 9. 2.)\n'
+			setting_val = '보탐봇버전 : 시누회 전용봇(9.2)\n'
 			setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
 			if basicSetting[8] != "" :
@@ -1241,8 +1241,8 @@ class mainCog(commands.Cog):
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- Special Thanks to. -----",
-					value= '```총무, 옹님, 공부중, 꽃신, 별빛, K.H.Sim, 쿠쿠, 팥빵, Bit```'
+					name="----- 고마운 사람들 -----",
+					value= '```시누회 혈원모두 and 폭행몬스터v```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
