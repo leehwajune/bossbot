@@ -1258,7 +1258,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '보탐봇버전 : 시누회 Ver.(2020. 9. 8.)\n'
+			setting_val = '보탐봇버전 : Server Ver.(2020. 9. 8.)\n'
 			setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
 			if basicSetting[8] != "" :
@@ -1281,7 +1281,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 고마운 사람들 -----",
-					value= '```시누회 혈원모두 and 대인배 엘샤♡```'
+					value= '```우그와 혈원 모두 ♡```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
