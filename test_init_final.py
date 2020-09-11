@@ -1274,6 +1274,7 @@ class mainCog(commands.Cog):
 			setting_val += '보스젠알림시간1 : ' + basicSetting[1] + ' 분 전\n'
 			setting_val += '보스젠알림시간2 : ' + basicSetting[3] + ' 분 전\n'
 			setting_val += '보스멍확인시간 : ' + basicSetting[2] + ' 분 후\n'
+			setting_val += '본 우그봇은 명치를 자주 때리면 삐져서 집을 나가요! 주의부탁!'\n'
 			embed = discord.Embed(
 					title = "----- 설정내용 -----",
 					description= f'```{setting_val}```',
