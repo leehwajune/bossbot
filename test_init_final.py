@@ -1307,8 +1307,8 @@ class mainCog(commands.Cog):
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- Special Thanks to. -----",
-					value= '```총무, 옹님, 공부중, 꽃신, 별빛, 크마, D.H.Kim, K.H.Sim, 쿠쿠, 오브로드, D.H.Oh, Bit, 팥빵, 천려, 이파리, 도미, 일깡```'
+					name="----- 고마운 사람들 -----",
+					value= '```폭행몬스터v```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
