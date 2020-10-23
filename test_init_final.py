@@ -1308,7 +1308,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 고마운 사람들 -----",
-					value= '```폭행몬스터v```'
+					value= '```폭행몬스터v & 시누회```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
