@@ -1280,7 +1280,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '폭행봇버전 : Server Ver. 2020. 9. 29.\n'
+			setting_val = '우그봇버전 : 2020. 9. 29.\n'
 			if basicSetting[6] != "" :
 				setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
@@ -1308,7 +1308,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 고마운 사람들 -----",
-					value= '```폭행몬스터v & 시누회```'
+					value= '```우그 & ONE연합분들```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
