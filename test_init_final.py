@@ -1291,7 +1291,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '보탐봇버전 : Server Ver. 23 (2020. 11. 2.)\n'
+			setting_val = '우그봇버전 : Ser. 2020. 11. 2.)\n'
 			if basicSetting[6] != "" :
 				setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
@@ -1319,8 +1319,8 @@ class mainCog(commands.Cog):
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- Special Thanks to. -----",
-					value= '```총무, 옹님, 공부중, 꽃신, 별빛, 크마, D.H.Kim, K.H.Sim, 쿠쿠, 오브로드, D.H.Oh, Bit, 팥빵, 천려, 이파리, 도미, 일깡, B.Park```'
+					name="----- 고마운 사람들 -----",
+					value= '```우그 & ONE연합분들```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
