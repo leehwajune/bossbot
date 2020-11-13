@@ -1320,7 +1320,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 고마운 사람들 -----",
-					value= '```우그와 ONE```'
+					value= '```우그와 ONE연합```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
