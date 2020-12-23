@@ -1347,8 +1347,8 @@ class mainCog(commands.Cog):
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- 고마운 사람들 -----",
-					value= '```우그와 악마연합```'
+					name="----- 문의는? -----",
+					value= '```마스터:시간 총무:우그 디코봇은 지효에게```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
