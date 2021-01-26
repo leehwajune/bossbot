@@ -2,7 +2,7 @@
 
 ################ Server Ver. 25 (2021. 1. 18.) #####################
 
-import sys, os
+import sys, os, ctypes
 import asyncio, discord, aiohttp
 import random, re, datetime, time, logging
 from discord.ext import tasks, commands
@@ -26,6 +26,10 @@ logging.basicConfig(stream=log_stream, level=logging.WARNING)
 #handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 #ilsanglog.addHandler(handler)
 #####################################################
+
+if not discord.opus.is_loaded():
+	discord.opus.load_opus(ctypes.util.find_library('opus'))
+	print("opus_loaded")
 
 basicSetting = []
 bossData = []
@@ -565,8 +569,9 @@ async def MakeSound(saveSTR, filename):
 async def PlaySound(voiceclient, filename):
 	if basicSetting[21] != "1":
 		return
-
-	source = discord.FFmpegPCMAudio(filename)
+        
+	# source = discord.FFmpegPCMAudio(filename)
+	source = discord.FFmpegOpusAudio(filename)
 	try:
 		voiceclient.play(source)
 	except discord.errors.ClientException:
@@ -575,7 +580,7 @@ async def PlaySound(voiceclient, filename):
 	while voiceclient.is_playing():
 		await asyncio.sleep(1)
 	voiceclient.stop()
-	source.cleanup()
+	# source.cleanup()
 	return
 
 #my_bot.db 저장하기
@@ -1359,7 +1364,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '우그봇버전 : Server Ver. 25 (2021. 1. 18.)\n'
+			setting_val = '보탐봇버전 : Server Ver. 25 (2021. 1. 18.)\n'
 			if basicSetting[6] != "" :
 				setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
@@ -1387,8 +1392,8 @@ class mainCog(commands.Cog):
 					color=0xff00ff
 					)
 			embed.add_field(
-					name="----- 문의는? -----",
-					value= '```마스터:시간 총무:우그 디코봇은 지효에게```'
+					name="----- Special Thanks to. -----",
+					value= '```총무, 옹님, 공부중, 꽃신, 별빛, 크마, D.H.Kim, K.H.Sim, 쿠쿠, 오브로드, D.H.Oh, Bit, 팥빵, 천려, 이파리, 도미, 일깡, B.Park```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
