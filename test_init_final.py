@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-################ Server Ver. 26 (2021. 1. 27.) #####################
+################ Server Ver. 26 (2021. 2. 24.) #####################
 
 import sys, os, ctypes
 import asyncio, discord, aiohttp
