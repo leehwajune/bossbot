@@ -1474,7 +1474,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 문의는? -----",
-					value= '```마스터:시간 총무:우그 디코봇:지효에게```'
+					value= '```마스터:엘샤쿤에게```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
