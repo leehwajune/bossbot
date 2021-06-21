@@ -1487,7 +1487,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 고마운 사람들 -----",
-					value= '```문의는 엘샤쿤, 질싸쿤에게```'
+					value= '```문의는 엘샤쿤에게```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
