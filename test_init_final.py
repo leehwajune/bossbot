@@ -1490,7 +1490,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 문의는? -----",
-					value= '``````'
+					value= '``` 엘샤에게 ```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
