@@ -1490,7 +1490,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 문의는? -----",
-					value= '``` 엘샤에게 ```'
+					value= '``` 한몸매 or 카카오톡 ID검색 sun21cc ```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
