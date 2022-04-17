@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-################ Server Ver. 28 (2021. 6. 23.) #####################
+################ Server Ver. 28 (2022. 4. 17.) #####################
 
 import sys, os, ctypes
 import asyncio, discord, aiohttp
@@ -1461,7 +1461,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '몸매봇버전 : Server Ver.(2022. 3. 16.)\n'
+			setting_val = '몸매봇버전 : Server Ver.(2022. 4. 17.)\n'
 			if basicSetting[6] != "" :
 				setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
