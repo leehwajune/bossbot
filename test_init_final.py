@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*- 
 
-################ Server Ver. 28 (2022. 4. 17.) #####################
+################ Server Ver. 28 (2022. 5. 10.) #####################
 
 import sys, os, ctypes
 import asyncio, discord, aiohttp
@@ -1461,7 +1461,7 @@ class mainCog(commands.Cog):
 	async def setting_(self, ctx):	
 		#print (ctx.message.channel.id)
 		if ctx.message.channel.id == basicSetting[7]:
-			setting_val = '몸매봇버전 : Server Ver.(2022. 4. 17.)\n'
+			setting_val = '몸매봇버전 : Server Ver.(2022. 5. 10.)\n'
 			if basicSetting[6] != "" :
 				setting_val += '음성채널 : ' + self.bot.get_channel(basicSetting[6]).name + '\n'
 			setting_val += '텍스트채널 : ' + self.bot.get_channel(basicSetting[7]).name +'\n'
@@ -1490,7 +1490,7 @@ class mainCog(commands.Cog):
 					)
 			embed.add_field(
 					name="----- 봇관련 문의는? -----",
-					value= '``` 한몸매(나도희/나희도) or 카카오톡 ID검색 sun21cc ```'
+					value= '``` 한몸매(한미소) or 카카오톡 ID검색 sun21cc ```'
 					)
 			await ctx.send(embed=embed, tts=False)
 		else:
